@@ -1,0 +1,278 @@
+/* DARK THEME INSPIRED BY ashton.websitelayout.net/home06-creative-dark.html */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #00e0ff;
+  --background-dark: #181c27;
+  --background-card: #23283b;
+  --text-light: #fff;
+  --text-dark: #000;
+  --text-muted: #b0b3c7;
+  --border-radius: 18px;
+}
+
+body {
+  background: var(--background-dark);
+  color: var(--text-light);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.portfolio-container {
+  background: transparent;
+}
+
+.navbar,
+.footer {
+  background: var(--background-card) !important;
+  color: var(--text-light);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-light) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.section-heading h2 {
+  color: var(--text-light);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.heading-line {
+  height: 4px;
+  width: 70px;
+  background: var(--secondary-color);
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.card,
+.skill-card,
+.project-card,
+.experience-card {
+  background: var(--background-card);
+  color: var(--text-light);
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.card-title,
+.card-text {
+  color: var(--text-light);
+}
+
+.skill-badge {
+  /* background: var(--secondary-color); */
+  font-size: 14px;
+  color: var(--text-light);
+  font-weight: 600;
+  padding: 8px;
+  border:1px solid var(--secondary-color);
+  border-radius: 31px;
+}
+
+.progress{
+  background: var(--text-dark) !important;
+}
+.progress-bar {
+  /* background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%); */
+  background: #e6e6e6;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background: var(--secondary-color);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background: var(--secondary-color);
+  color: var(--background-dark);
+}
+
+.footer {
+  background: var(--background-card);
+  color: var(--text-light);
+}
+
+.social-link {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+input, textarea, .form-control {
+  background: #23283b !important;
+  color: var(--text-light) !important;
+  border: 1px solid #2e3451 !important;
+  border-radius: 8px;
+}
+
+label, .form-label {
+  color: var(--text-muted);
+}
+
+::placeholder {
+  color: #b0b3c7 !important;
+  opacity: 1;
+}
+
+.experience-card {
+  border-radius: var(--border-radius);
+  background: var(--background-card);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 40px rgba(44, 62, 80, 0.18);
+}
+
+.exp-icon {
+  min-width: 64px;
+  min-height: 64px;
+  font-size: 2rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.bg-gradient {
+  /* background: linear-gradient(135deg, var(--primary-color) 60%, var(--secondary-color) 100%) !important; */
+  background: linear-gradient(135deg, #23283b 60%, #181c27 100%) !important;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--background-dark);
+  color: var(--text-light);
+  padding: 60px 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.hero-content .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: var(--secondary-color);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: var(--background-dark);
+  background: var(--secondary-color);
+}
+
+.wave-container svg path {
+  fill: var(--background-dark);
+}
+
+.about-section,
+.contact-section,
+.projects-section,
+.skills-section,
+.career-section {
+  background: transparent !important;
+}
+
+.card-footer {
+  background: transparent;
+  border: none;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+@media (max-width: 991.98px) {
+  .experience-card .row.g-0 {
+    flex-direction: column;
+  }
+  .experience-card .col-md-4,
+  .experience-card .col-md-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .experience-card .col-md-4 {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .hero-content .btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+}
+
+.card-title {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
