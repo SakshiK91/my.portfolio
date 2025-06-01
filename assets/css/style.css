@@ -276,3 +276,7 @@ label, .form-label {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+
+.navbar-toggler{
+background-color: white !important;
+}
